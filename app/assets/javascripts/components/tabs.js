@@ -9,7 +9,7 @@ $(document).ready(function() {
     $(".active-tab").removeClass("active-tab").hide(300, function() {
       $(".presentation-tab").addClass("active-tab").show(300);
     });
-    $(".tabs-btn").prop('disabled', false);
+    $(".tab-btn").prop('disabled', false);
     $(".presentation-btn").prop('disabled', true);
   });
 
@@ -17,7 +17,7 @@ $(document).ready(function() {
     $(".active-tab").removeClass("active-tab").hide(300, function() {
       $(".menu-tab").addClass("active-tab").show(300);
     });
-    $(".tabs-btn").prop('disabled', false);
+    $(".tab-btn").prop('disabled', false);
     $(".menu-btn").prop('disabled', true);
   });
 
