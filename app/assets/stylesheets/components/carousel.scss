@@ -1,0 +1,19 @@
+.carousel {
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  img {
+    height: 450px;
+    width: auto;
+  }
+}
+
+.arrows {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  .previous {
+
+  }
+}
