@@ -1,4 +1,25 @@
 .tabs-box {
   text-align: center;
   height: 300px;
+  border: 1px solid black;
+}
+
+.tabs {
+  text-align: left;
+  font-size: 24px;
+}
+
+.bocuse {
+  max-height: 200px;
+  max-width: auto;
+}
+
+.tab-btns {
+  border: 1px solid black;
+}
+
+.tab-btn {
+  border: none;
+  background: none;
+  font-size: 20px;
 }
