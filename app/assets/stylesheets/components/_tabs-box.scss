@@ -1,9 +1,11 @@
 .tabs-box {
   text-align: center;
-  height: 300px;
+  height: auto;
   border: 1px solid black;
   margin-top: 100px;
   margin-bottom: 100px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .tabs {
@@ -16,8 +18,9 @@
 }
 
 .bocuse {
-  max-height: 250px;
-  max-width: auto;
+  max-width: 390px;
+  height: auto;
+  width: 100%;
   float: left;
 }
 
@@ -57,9 +60,9 @@ button:disabled {
 }
 
 .presentation-tab {
+  overflow: hidden;
   p strong {
     margin-left: 50px;
-
   }
 
   p i {

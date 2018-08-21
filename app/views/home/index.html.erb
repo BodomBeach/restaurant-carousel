@@ -1,74 +1,12 @@
-<nav class="navbar navbar-light bg-light">
-  <h1 class="navbar-text">
-    Il Ristorante de Ricardo della Noche
-  </h1>
-</nav>
+<%= render 'layouts/navbar' %>
 
 <div class="wrapper">
   <div class="container">
-    <div class="tabs-box">
-      <div class="tab-btns">
-        <button class="presentation-btn tab-btn">Presentation</button>
-        <button class="menu-btn tab-btn">Menu</button>
-        <button class="reference-btn tab-btn">References</button>
-      </div>
-      <div class="tabs presentation-tab">
-        <p>
-          <img class="bocuse" src="http://cdn.programme-television.org/var/premiere/storage/images/tele-7-jours/news-tv/deprogrammation-tv-en-famille-laisse-sa-place-a-l-hommage-a-paul-bocuse-sur-m6-4557344/94012244-1-fre-FR/Deprogrammation-TV-En-famille-laisse-sa-place-a-l-hommage-a-Paul-Bocuse-sur-M6_news_full.jpg">
-          <br><br>
-          <strong>Ici, on fait v'la la bonne bouffe</strong><br>
-          <i>-Paul Bocuse</i>
-        </p>
-      </div>
-      <div class="tabs menu-tab">
-        <ul>
-          <h2>Menu du jour</h2>
-          <li>Kebab sauce samouraï/harissa, salade, tomates, oignons: <strong>4.50€</strong></li>
-          <li>Le Cabillaud Aux Algues, Beurre aux zestes de citron vert: <strong>140€</strong></li>
-          <li>Le Steak Haché Frites du Chef: <strong>120€</strong></li>
-          <li>La moule (et frites) de la femme du chef: <strong>240€</strong></li>
-        </ul>
-      </div>
-      <div class="tabs reference-tab">
-        Made by THP Grenoble, <strong>great success.</strong><br>
-        <img src="http://beta.ems.ladbiblegroup.com/s3/content/808x455/4ddb2ca75ab53cc5ab2a33c8f2113534.png">
-      </div>
+    <div class="row">
+      <%= render 'layouts/tabs' %>
     </div>
-    <div class="carousel">
-
-      <button class="arrows previous">
-        <i class="far fa-arrow-alt-circle-left"></i>
-      </button>
-      <button class="arrows next">
-        <i class="far fa-arrow-alt-circle-right"></i>
-      </button>
-
-      <div class="food-pics">
-        <img value="1" class="carousel-image" src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
-        <img value="2" class="carousel-image" src="https://images.pexels.com/photos/106343/pexels-photo-106343.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
-        <img value="3" class="carousel-image" src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
-        <img value="4" class="carousel-image" src="https://images.pexels.com/photos/262918/pexels-photo-262918.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
-        <img value="5" class="carousel-image" src="https://images.pexels.com/photos/793785/pexels-photo-793785.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
-      </div>
-    </div>
-
-    <div class="image-nav">
-      <button value="1" class="image-dot">
-        <i class="fa fa-circle"></i>
-      </button>
-      <button value="2" class="image-dot active-dot">
-        <i class="fa fa-circle"></i>
-      </button>
-      <button value="3" class="image-dot">
-        <i class="fa fa-circle"></i>
-      </button>
-      <button value="4" class="image-dot">
-        <i class="fa fa-circle"></i>
-      </button>
-      <button value="5" class="image-dot">
-        <i class="fa fa-circle"></i>
-      </button>
-    </div>
+    <%= render 'layouts/carousel' %>
   </div>
-
 </div>
+
+<%= render 'layouts/footer' %>

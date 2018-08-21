@@ -24,26 +24,30 @@ $(document).ready(function() {
   $(".image-dot, .previous, .next").click(function() {
     $(".image-dot").removeClass("active-dot");
     $('[value="' + cursor + '"]').addClass("active-dot");
+    console.log(cursor)
   });
 })
 
 
 function next() {
-  if (cursor === 5) {
-    $(".food-pics").animate({left: '+=3200px'});
+  console.log(typeof cursor)
+  if (Number(cursor) === 5) {
+
+    $(".food-pics").animate({left: '+=3208px'});
     cursor = 1;
   } else {
-    $(".food-pics").animate({left: '-=800px'});
+    $(".food-pics").animate({left: '-=802px'});
     cursor++;
+
   }
 }
 
 function previous() {
-  if (cursor === 1) {
-    $(".food-pics").animate({left: '-=3200px'});
+  if (Number(cursor) === 1) {
+    $(".food-pics").animate({left: '-=3208px'});
     cursor = 5;
   } else {
-    $(".food-pics").animate({left: '+=800px'});
+    $(".food-pics").animate({left: '+=802px'});
     cursor -= 1;
   }
 }

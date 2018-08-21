@@ -28,4 +28,4 @@ $(document).ready(function() {
     $(".tab-btn").prop('disabled', false);
     $(".reference-btn").prop('disabled', true);
   });
-})
+});
