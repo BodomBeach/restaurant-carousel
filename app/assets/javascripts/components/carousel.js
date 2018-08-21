@@ -3,8 +3,6 @@ var cursor = 2,
 
 $(document).ready(function() {
 
-
-
   $(".next").click(function() {
     next()
   });
@@ -15,23 +13,17 @@ $(document).ready(function() {
 
   $(".image-dot").click(function() {
 
-
-
-    let shift = $(this).val() - cursor;
-    let shiftpx = {
+    var shiftpx = {
       'left': -$(this).val() * slideWidth + 950
     };
-    console.log(cursor, shift)
+
     $(".food-pics").animate(shiftpx);
     cursor = $(this).val()
-    console.log($(this).val())
-    console.log(cursor, shift)
   });
 
   $(".image-dot, .previous, .next").click(function() {
     $(".image-dot").removeClass("active-dot");
     $('[value="' + cursor + '"]').addClass("active-dot");
-    console.log($('.image-dot option[value="' + cursor + '"]'));
   });
 })
 
@@ -44,7 +36,6 @@ function next() {
     $(".food-pics").animate({left: '-=800px'});
     cursor++;
   }
-  console.log(cursor)
 }
 
 function previous() {
@@ -55,5 +46,4 @@ function previous() {
     $(".food-pics").animate({left: '+=800px'});
     cursor -= 1;
   }
-  console.log(cursor)
 }
