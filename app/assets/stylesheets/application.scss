@@ -1,4 +1,6 @@
+@import "variables/personal_variables";
+@import "variables/bootstrap_variables";
 @import "bootstrap";
 @import "font-awesome";
-@import "components/carousel";
-@import "components/tabs-box";
+@import "components/*";
+@import "pages/*";
