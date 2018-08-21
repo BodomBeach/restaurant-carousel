@@ -2,24 +2,68 @@
   text-align: center;
   height: 300px;
   border: 1px solid black;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .tabs {
   text-align: left;
   font-size: 24px;
+
+  li {
+    font-size: 18px;
+  }
 }
 
 .bocuse {
-  max-height: 200px;
+  max-height: 250px;
   max-width: auto;
+  float: left;
 }
 
 .tab-btns {
   border: 1px solid black;
+
+  button {
+    font-size: 24px;
+    transition: .5s;
+    width: 150px;
+  }
+}
+
+button:disabled {
+  color: black;
+  background-color: rgb(157, 164, 141);
 }
 
 .tab-btn {
   border: none;
   background: none;
   font-size: 20px;
+}
+
+.tab-btn:hover {
+    background-color: grey;
+}
+
+.reference-tab {
+  text-align: center;
+  vertical-align: baseline;
+
+  img {
+    max-height: 200px;
+    max-width: auto;
+  }
+}
+
+.presentation-tab {
+  p strong {
+    margin-left: 50px;
+
+  }
+
+  p i {
+    font-size: 18px;
+    margin-left: 50px;
+  }
 }
