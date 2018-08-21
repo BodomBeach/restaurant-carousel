@@ -1,24 +1,7 @@
-# README
+# Bienvenue au resto 3* de Paul Bocuse, on est spécialisés dans les kebabs et les moules frites (tout est surgelé)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Lien vers l'app en production : https://ristorante-della-noche.herokuapp.com/
 
-Things you may want to cover:
+* Utilisation de jQuery - Tabs, slider d'image, manipulation du DOM.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Par THP Grenoble: Nicolas Bertin, Tom Ballu, Ludovic Bourgoin.
