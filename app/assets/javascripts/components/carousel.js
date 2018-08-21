@@ -1,5 +1,8 @@
 var cursor = 2,
-    slideWidth = 802;
+    slideWidth = 802,
+    timer = window.setInterval(next, 5000);
+
+
 
 $(document).ready(function() {
 
@@ -19,6 +22,8 @@ $(document).ready(function() {
 
     $(".food-pics").animate(shiftpx);
     cursor = $(this).val()
+    clearInterval(timer);
+    timer = window.setInterval(next, 5000);
   });
 
   $(".image-dot, .previous, .next").click(function() {
@@ -38,7 +43,8 @@ function next() {
   } else {
     $(".food-pics").animate({left: '-=802px'});
     cursor++;
-
+    clearInterval(timer);
+    timer = window.setInterval(next, 5000);
   }
 }
 
@@ -49,5 +55,7 @@ function previous() {
   } else {
     $(".food-pics").animate({left: '+=802px'});
     cursor -= 1;
+    clearInterval(timer);
+    timer = window.setInterval(next, 5000);
   }
 }
